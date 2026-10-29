@@ -2,7 +2,7 @@
 
 A fully responsive Quora-style posts web application built using **Node.js, Express.js, EJS, and CSS**. This application allows users to create, view, edit, and delete posts through a clean and responsive interface.
 
-🔗 **GitHub Repository:** https://github.com/ShyamKumarChaurasiya/Quora
+🔗 **GitHub Repository:** [Quora Posts](https://github.com/ShyamKumarChaurasiya/Quora)
 
 ## ✨ Features
 
@@ -27,6 +27,7 @@ A fully responsive Quora-style posts web application built using **Node.js, Expr
 - **EJS** – Dynamic server-side rendering
 - **UUID** – Unique post ID generation
 - **Method-Override** – Support for PATCH and DELETE methods
+- **Git & GitHub** – Version control and project hosting
 
 ## 🚀 Getting Started
 
@@ -50,11 +51,7 @@ cd Quora
 npm install
 ```
 
-The project uses the following main dependencies:
-
-```bash
-npm install express ejs uuid method-override
-```
+This installs the dependencies listed in `package.json`, including Express, EJS, UUID, and Method-Override.
 
 ### 4. Start the Server
 
@@ -62,7 +59,7 @@ npm install express ejs uuid method-override
 node index.js
 ```
 
-If your main server file has a different name, replace `index.js` with that filename.
+If your project uses a different entry-point filename, replace `index.js` with the appropriate filename.
 
 ### 5. Open the Application
 
@@ -87,10 +84,14 @@ Quora/
 │   ├── update.ejs       # Edit an existing post
 │   └── error.ejs        # Error page
 │
+├── .gitignore           # Excludes node_modules from Git
 ├── index.js             # Express server and routes
-├── package.json         # Project dependencies
+├── package.json         # Project dependencies and scripts
+├── package-lock.json    # Dependency lock file
 └── README.md            # Project documentation
 ```
+
+> **Note:** The `node_modules/` directory is excluded from Git using `.gitignore`. Dependencies can be installed locally using `npm install`.
 
 ## 🔗 Application Routes
 
@@ -123,14 +124,15 @@ This project helped me practice:
 - Implementing CRUD operations
 - Using EJS for dynamic HTML rendering
 - Handling form submissions with Express
-- Using method-override for PATCH and DELETE requests
+- Using Method-Override for PATCH and DELETE requests
 - Generating unique IDs using UUID
 - Organizing routes and views
 - Creating responsive web interfaces
+- Using Git and GitHub for version control
 
 ## ⚠️ Project Note
 
-This project currently stores posts in an in-memory JavaScript array.
+This project currently stores posts in an **in-memory JavaScript array**.
 
 - Posts are available while the server is running.
 - Restarting the server resets the posts to the initial sample data.
@@ -140,7 +142,7 @@ This project currently stores posts in an in-memory JavaScript array.
 
 **Shyam Kumar Chaurasiya**
 
-- GitHub: https://github.com/ShyamKumarChaurasiya
+- GitHub: [ShyamKumarChaurasiya](https://github.com/ShyamKumarChaurasiya)
 
 ---
 
